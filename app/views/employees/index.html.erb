@@ -1,0 +1,45 @@
+<h1>employees index</h1>
+
+
+
+
+
+
+<table class="table table-bordered table-striped table-condensed">
+	<thead>
+		<th>Id</th>
+		<th>first_name</th>
+		<th>middle_name</th>
+		<th>last_name</th>
+		<th>personel_email</th>
+		<th>city</th>
+		<th>state</th>
+		<th>country</th>
+		<th>pincode</th>
+		<th>address_line_1</th>
+		<th>address_line_2</th>
+		<th>created_at</th>
+		<th>updated_at</th>
+	</thead>
+	<tbody>
+		<% @employees.each do |employee| %>
+		<tr>
+			<td><%= employee.id %></td>
+			<td><%= employee.first_name %></td>
+			<td><%= employee.middle_name %></td>
+			<td><%= employee.last_name %></td>
+			<td><%= employee.personel_email %></td>
+			<td><%= employee.city %></td>
+			<td><%= employee.state %></td>
+			<td><%= employee.country %></td>
+			<td><%= employee.pincode %></td>
+			<td><%= employee.address_line_1 %></td>
+			<td><%= employee.address_line_2 %></td>
+			<td><%= employee.created_at %></td>
+			<td><%= employee.updated_at %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+
